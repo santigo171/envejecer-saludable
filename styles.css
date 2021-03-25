@@ -20,12 +20,23 @@ html {
   width: 100vw;
 
   display: grid;
-  /* grid-template-rows: 10% 80% 10%; */
 
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-height: 582px) {
+  .grid-layout {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-layout {
+    grid-template-rows: 10% 80% 10%;
+  }
 }
 
 header {
@@ -60,17 +71,22 @@ header img {
 .welcome {
   height: 100%;
   padding: 30px 10px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  align-items: center;
 
   font-size: 1.8rem;
 }
 
+.welcome__slide-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media (min-width: 620px) {
-  .welcome {
-    padding: 0 20%;
+  .welcome__slide-container {
+    /* padding: 0 10%; */
     justify-content: space-evenly;
   }
 }
@@ -113,6 +129,23 @@ header img {
 .welcome__slide--2 img {
   grid-column: 1;
   grid-row: 1;
+}
+
+.welcome__button {
+  margin: 0 auto;
+  width: 300px;
+  height: 90px;
+  border-radius: 15px;
+
+  text-align: center;
+
+  background-color: #fff;
+  /* cursor: pointer; */
+  transition: background-color 0.3s;
+}
+
+.welcome__button:hover {
+  background-color: rgb(187, 187, 187);
 }
 
 footer {

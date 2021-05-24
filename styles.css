@@ -7,6 +7,12 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto Condensed", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .center {
@@ -137,15 +143,16 @@ header img {
   height: 90px;
   border-radius: 15px;
 
+  font-size: 2.3rem;
   text-align: center;
 
   background-color: #fff;
-  /* cursor: pointer; */
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .welcome__button:hover {
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(255, 225, 225);
 }
 
 footer {
@@ -153,5 +160,5 @@ footer {
   color: #fff;
   font-size: 1.9rem;
 
-  background-color: rgba(112, 112, 112, 0.432);
+  background-color: rgba(112, 112, 112, 0.616);
 }

@@ -10,6 +10,12 @@ html {
   color: rgb(0, 0, 0);
 }
 
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);

@@ -6,10 +6,6 @@ header {
   background-color: rgba(180, 123, 123, 0);
 }
 
-header img {
-  width: 60px;
-}
-
 @media (min-width: 750px) {
   header img {
     width: 110px;

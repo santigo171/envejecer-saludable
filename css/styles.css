@@ -33,6 +33,10 @@ header {
   align-items: center;
 }
 
+header img {
+  width: 60px;
+}
+
 .header__title {
   text-align: center;
 
